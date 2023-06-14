@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Personalidad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script type="module" crossorigin src="/assets/index-eed44933.js"></script>
+  <link rel="stylesheet" href="/assets/index-dde183ec.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <h2>Test de Personalidad</h2>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">INSTRUCCIONES (CONTESTAR M&Iacute;NIMO 28 PREGUNTAS)</h5>
+            <p class="card-text">Esta prueba tiene por objeto establecer los rasgos fundamentales de su fisonomía
+              psicológica.
+              No investiga defectos o falla de la voluntad o de la conducta; solo determina su modo de ser natural. Su
+              trabajo consiste en leer atentamente las preguntas que están a continuaci&oacute;n y marcar aquellas en
+              las
+              que
+              usted se identifica. Conteste con absoluta sinceridad. Recuerde que no hay respuestas buenas o malas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div>
+          <input type="text" class="form-control" id="inpNombre" placeholder="Escribe Tu Nombre">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-check container p-4" id="divPreguntas">
+          <!--     <div class="row border border-success">
+      <div class="col-1 p-2 mb-2"><b>1</b></div>
+      <div class="col p-2 mb-2">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+        <label class="form-check-label" for="flexCheckChecked1">¿Ama la naturaleza?</label>
+      </div>
+    </div>
+ -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-1">
+          <button type="button" class="btn btn-success" id="btnProcesar">Procesar</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="modal" id="secModalError">
+    <div class="modal_container">
+      <h2 class="modal_title" id="errTitulo">Titulo</h2>
+      <p class="modal_mensaje" id="errMensaje">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet odio iure sapiente harum quia. Odit eos dolores quo pariatur molestias nihil iusto. Doloremque modi sed accusamus. Repudiandae, debitis molestiae.</p>
+      <a href="#" class="modal_close" id="errorBoton">Cerrar</a>
+    </div>
+  </section>
+
+  <section class="modal" id="secModalResultado">
+    <div class="modal_container">
+      <h2 class="modal_title" id="resultNombre">Nombre</h2>
+      <p class="modal_mensaje" ><b>Perfil</b></p>
+      <p class="modal_mensaje" id="resultPerfil">Perfil: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet odio iure sapiente harum quia. Odit eos dolores quo pariatur molestias nihil iusto. Doloremque modi sed accusamus. Repudiandae, debitis molestiae.</p>
+      <p class="modal_mensaje" ><b>Rasgo</b></p>
+      <p class="modal_mensaje" id="resultRasgo">Rasgo: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet odio iure sapiente harum quia. Odit eos dolores quo pariatur molestias nihil iusto. Doloremque modi sed accusamus. Repudiandae, debitis molestiae.</p>
+      <a href="#" class="modal_close" id="resultBoton">Cerrar</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
